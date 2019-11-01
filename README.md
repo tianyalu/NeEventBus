@@ -1,4 +1,4 @@
-## NeEventBus 手写EventBust框架 
+## NeEventBus 手写EventBus框架 
 ### 思路：  
 EventBus 作为Activity/Fragment 的中间桥梁，管理了其中被Subscribe注解的方法，以Object为键，
 放在Map<Object, List<SubscribeMethod>> Map中；当post方法调用时遍历Map,遍历List,找到所有以bean参数类型的方法，
