@@ -1,4 +1,4 @@
-# 手写`EventBus2.0`框架 
+# 手写`EventBus`反射原理框架 
 ## 一、实现思路  
 `EventBus` 作为`Activity/Fragment `的中间桥梁，管理了其中被`Subscribe`注解的方法，以`Object`(`Activity`或者`Fragment`)为键，放在`Map<Object, List<SubscribeMethod>> Map`中；当`post`方法调用时遍历`Map`,遍历`List`,找到所有以`bean`参数类型的方法，并通过反射执行这些方法。
 
